@@ -1,0 +1,49 @@
+<div style="background-color: #000; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; font-family: 'Pretendard', sans-serif;">
+    <div style="max-width: 600px; width: 100%; text-align: center; border: 1px solid #333; padding: 60px 20px; position: relative; background: radial-gradient(circle, #0a0a0a 0%, #000 100%);">
+        
+        <div style="position: absolute; top: 10px; left: 10px; width: 20px; height: 20px; border-top: 2px solid #555; border-left: 2px solid #555;"></div>
+        <div style="position: absolute; bottom: 10px; right: 10px; width: 20px; height: 20px; border-bottom: 2px solid #555; border-right: 2px solid #555;"></div>
+
+        <div style="margin-bottom: 30px;">
+            <span style="font-size: 40px; color: #555; display: block; margin-bottom: 10px;">⚠️</span>
+            <h2 style="color: #e0e0e0; font-family: 'Arial Black', sans-serif; font-size: 24px; letter-spacing: 3px; margin: 0;">DATA CORRUPTED</h2>
+            <div style="width: 50px; height: 2px; background: #cd5c5c; margin: 15px auto;"></div>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <p style="color: #888; font-size: 15px; line-height: 1.8; word-break: keep-all;">
+                현재 해당 구역의 데이터베이스가 오염되었거나 복구 중에 있습니다.<br>
+                현장 해결사들의 신변 확보 및 정보 동기화가 지연되고 있습니다.
+            </p>
+            <p style="color: #555; font-size: 13px; font-style: italic; margin-top: 10px;">
+                "구역 내 미확인 신호 다수 감지. 접근을 권장하지 않음."
+            </p>
+        </div>
+
+        <div style="width: 200px; height: 4px; background: #1a1a1a; margin: 0 auto 40px auto; overflow: hidden; position: relative;">
+            <div style="position: absolute; width: 30%; height: 100%; background: #555; animation: loading 1.5s infinite linear;"></div>
+        </div>
+
+        <a href="index.html" style="
+            display: inline-block;
+            padding: 12px 30px;
+            color: #7a8b92;
+            text-decoration: none;
+            border: 1px solid #444;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        " onmouseenter="this.style.borderColor='#888'; this.style.color='#fff';"
+           onmouseleave="this.style.borderColor='#444'; this.style.color='#7a8b92';">
+            RETURN TO ARCHIVE
+        </a>
+    </div>
+
+    <style>
+        @keyframes loading {
+            0% { left: -30%; }
+            100% { left: 100%; }
+        }
+    </style>
+</div>
